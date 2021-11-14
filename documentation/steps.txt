@@ -1,0 +1,23 @@
+npm install -g @vue/cli
+vue create project-name
+
+#optional 
+vue ui
+
+property binding
+v-model, v-if, v-for, @blur, @click, $emit
+
+nextTick()
+
+main.js is the main file
+
+App.vue --> conatins 3 parts [template,script,style]
+
+   * we have components in componentsfoleder
+   * we need to import & register  each component in App.vue
+
+--run vue project--
+npm run serve
+-------------------
+npm run build
+-------------------
