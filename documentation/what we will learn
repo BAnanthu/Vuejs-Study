@@ -1,0 +1,27 @@
+Application and components
+DOM Interation with vue
+Data and Methods
+Build Loops iwth vue
+Build A form with Vue
+
+
+
+Application and components
+    - how to make a new vue app instance.
+    - how to start rendering 
+    
+DOM Interation with vue
+    - DOM(HTML tree)
+    - build a timer render out to view
+    - how to build recative behaviour with vue directives
+    - user interation and uuser inputs
+
+Data and Methods
+    - How to interpulate text and HTML
+    - how set data properties and methods with vue
+    - how to enable bouncing in vue
+
+Build Loops iwth vue
+    - vue has its on looping system
+    - loop through arrays, range , objects etc
+    
