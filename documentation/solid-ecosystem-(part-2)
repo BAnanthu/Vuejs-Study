@@ -1,0 +1,17 @@
+Solid Ecosystem
+
+     * vue-router for client-side routing
+     * vuex for managing  state 
+     * vue-test-utils for unit testing
+     * vue-devtools for debugging
+     * vue command line interface
+
+     dont need tpo know every thing. :)
+
+Reactivity System
+
+    * Vue app creates a fully reaction root component
+    * can be an event bus
+    * can track dependency changes separate from the application component tree.
+
+code in ==> www.repl.it
