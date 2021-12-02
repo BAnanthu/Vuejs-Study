@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="http://unpkg.com/vue@next"></script>
+
+</head>
+<body>
+    <div id="app">
+
+        <div :style="{fontSize:headerFontSize + 'em',backgroundColor:'grey',margin:'20px'}" >
+            <!-- @ symbol, symbol is shorthand for v-on -->
+            <header-component v-for="header in headers" :key="header.id" title="header.title" @increase-text-size="headerFontSize += 0.5"> </header-component>
+        </div>
+
+    </div>
+
+    <script src="./script.js"></script>
+    
+</body>
+</html>

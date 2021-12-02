@@ -6,6 +6,7 @@ const FistVueApp = {
             onHover:"TIMER"
         }
     },
+    // type of lifecycle stage
     mounted() {
         setInterval(()=>{
             this.time++

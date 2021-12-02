@@ -24,4 +24,7 @@ Data and Methods
 Build Loops iwth vue
     - vue has its on looping system
     - loop through arrays, range , objects etc
-    
+
+Build A form with Vue
+    - all input elements for form
+    -
