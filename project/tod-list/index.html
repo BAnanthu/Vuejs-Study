@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="http://unpkg.com/vue@next"></script>
+    <link rel="stylesheet" href="styles.css">
+   <style>
+        .bg{
+        color:blueviolet
+    }
+    .shadow{
+            box-shadow: 1px 1px 10px -3px black;
+        }
+   </style>
+</head>
+<body>
+    <!-- Dynamic Class Name -->
+    <div id="app" class="cards">     
+        <form v-on:submit.prevent="addNewTask">
+            <label>Add a new task</label>
+            <input type="text" id="task-input" v-model="newTask">
+            <input type="submit">
+        </form>
+        <ol>
+           
+            <todo-item  v-for="(task,name,index) in tasks" :key="task.id" :title="task.title"
+            @remove="tasks.splice(index,1)"
+            ></todo-item>
+        </ol>
+    </div>
+
+    <script src="./script.js"></script>
+    
+</body>
+</html>

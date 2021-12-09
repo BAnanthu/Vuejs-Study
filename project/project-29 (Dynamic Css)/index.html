@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="http://unpkg.com/vue@next"></script>
+    <link rel="stylesheet" href="styles.css">
+   <style>
+        .bg{
+        color:blueviolet
+    }
+    .shadow{
+            box-shadow: 1px 1px 10px -3px black;
+        }
+   </style>
+</head>
+<body>
+    <!-- Dynamic Class Name -->
+    <div id="app" class="cards">     
+        <h1 :class="{bg:true}">Dynamic Class Name</h1>
+        <h1 :class="{bg:false}">Dynamic Class Name</h1>
+        <h1 :class="{bg:isactive}">Dynamic Class Name</h1>
+
+        //changing from true to false and vise versa
+        <h1 v-on:click="isactive = !isactive" :class="{bg:isactive}">Dynamic Class Name</h1>
+        
+        <h1 :class="{bg:isactive,shadow:isactive1}">Dynamic Class Name</h1>
+
+        <h1 :class="getClasses">Dynamic Class Name</h1>
+        
+    </div>
+
+    <script src="./script.js"></script>
+    
+</body>
+</html>
